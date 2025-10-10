@@ -1,0 +1,14 @@
+# Ignorar caches e metadados
+__pycache__/
+.DS_Store
+
+# Ignorar ambiente virtual
+.venv/
+
+# Ignorar saídas temporárias
+*.log
+*.tmp
+
+# Ignorar arquivos de áudio e saídas se quiser
+audios/
+saidas/
