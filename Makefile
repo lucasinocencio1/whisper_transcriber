@@ -7,10 +7,10 @@ install:
 	pip install -r requirements.txt
 
 run:
-	uvicorn app:app --reload
+	uvicorn src.app:app --reload
 
 run-batch:
-	python transcribe_batch.py --input ./audios --out ./output --model small
+	python -m src.transcribe_batch --input ./audios --out ./output --model small
 
 clean:
 	rm -rf __pycache__ .pytest_cache
