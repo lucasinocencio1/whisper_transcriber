@@ -4,28 +4,21 @@ An open-source Whisper Transcriber - automatic Speech-to-Text
 In this case, we have business rules for a import partner.
 
 
-## Setup
+## Use make help to see this on terminal.
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+  make venv       - create virtualenv .venv
+  make install    - install dependencies
+  make run        - start API (uvicorn)
+  make run-batch  - run batch transcription (audios -> output)
+  make clean      - remove caches
+  make help       - help option
 ```
 
-## API (FastAPI)
 
-```bash
-uvicorn app:app --reload
-```
 
-- **POST /transcribe** — upload an audio file; optional query params: `model`, `language`, `device`, `compute_type`, `keywords` (comma-separated).
+This package was mainly LLM-generated (Cursor), with very strong opinions from @lucasinocencio1.
 
-## Batch CLI
 
-```bash
-python transcribe_batch.py --input ./audios --out ./output --model small
-```
-
-Optional: `--keywords keywords.txt` (one keyword per line).
-
+Questions: Lucas Inocêncio
 
