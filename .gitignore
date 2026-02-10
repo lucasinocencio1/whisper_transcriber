@@ -12,3 +12,4 @@ __pycache__/
 # Ignorar arquivos de áudio e saídas se quiser
 audios/
 saidas/
+*.mp3
