@@ -23,7 +23,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Check app imports
-        run: python -c "from app import app; print('app OK')"
+        run: python -c "from src.app import app; print('app OK')"
 
       - name: Check batch CLI
-        run: python transcribe_batch.py --help
+        run: python -m src.transcribe_batch --help
